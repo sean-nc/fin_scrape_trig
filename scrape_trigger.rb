@@ -22,6 +22,7 @@ class Scrape
           @agent.get(url)
           sleep 10
           p "No more search terms."
+          return
         rescue
           p 'Blocked by Google, next app.'
           next
